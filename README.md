@@ -10,6 +10,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Run npm install:
+```bash
+npm install
+```
+Set up the database:
+```base
+npx prisma migrate dev --name init
+```
+
 Run the development server:
 
 ```bash

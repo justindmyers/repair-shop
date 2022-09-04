@@ -49,7 +49,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 				status: {
 					create: {
 						status: 'Submitted',
-						updatedDate: new Date(),
+						updatedAt: new Date(),
 					},
 				},
 			},

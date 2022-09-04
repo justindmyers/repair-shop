@@ -31,9 +31,9 @@ const RepairDetailsPage = () => {
 				<Divider />
 
 				{error ? (
-					<div>{error.message}</div>
+					<p>{error.message}</p>
 				) : !data ? (
-					<div>Loading ...</div>
+					<p>Loading ...</p>
 				) : !error && data ? (
 					<div className="md:grid md:grid-cols-3 md:gap-10">
 						<div className="col-span-2">
@@ -89,7 +89,7 @@ const RepairDetailsPage = () => {
 										<div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
 											<dt className="text-sm font-medium text-gray-500">Last Updated</dt>
 											<dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-												{new Date(data.status.updatedDate).toDateString()}
+												{new Date(data.status.updatedAt).toDateString()}
 											</dd>
 										</div>
 									</dl>
