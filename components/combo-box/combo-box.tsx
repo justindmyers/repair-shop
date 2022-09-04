@@ -41,11 +41,14 @@ const ComboBox = forwardRef<HTMLInputElement, ComboBoxProps>(({ id, label, error
 				<div className="relative mt-1">
 					<div className={
 						classNames(
-							"relative w-full cursor-default overflow-hidden bg-white text-left mt-1 block rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm",
-							{ 'border-red-600 focus:border-red-600 focus:ring-red-600': error }
+							"relative w-full cursor-default overflow-hidden bg-white text-left mt-1 block rounded-md border shadow-sm sm:text-sm",
+							error
+							? 'border-red-600 focus:border-red-600 focus:ring-red-600'
+							: 'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500'
 						)
 					}>
 						<Combobox.Input
+							autoComplete="off"
 							id={id}
 							{...comboboxProps}
 							ref={ref}

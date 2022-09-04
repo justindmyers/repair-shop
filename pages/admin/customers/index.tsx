@@ -83,7 +83,7 @@ const CustomerListingPage = () => {
 								</table>
 							</div>
 						) : (
-							<p>No Repair Requests Found</p>
+							<p>No Customers Found</p>
 						)}
 					</>
 				) : null}
