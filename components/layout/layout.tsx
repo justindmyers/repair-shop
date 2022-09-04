@@ -13,7 +13,7 @@ const Layout = ({ children, pageTitle, subTitle, showSearch = false }: LayoutPro
 	return (
 		<>
 			<Header />
-			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-8">
+			<main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-8">
 				<div className="flex items-center justify-between">
 					<div>
 						<h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">{pageTitle}</h1>
@@ -44,7 +44,7 @@ const Layout = ({ children, pageTitle, subTitle, showSearch = false }: LayoutPro
 				</div>
 
 				{children}
-			</div>
+			</main>
 		</>
 	);
 };
